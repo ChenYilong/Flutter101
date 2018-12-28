@@ -9,3 +9,72 @@ My hobbies:
 
  - when I name a class name or class file name, I prefer Pascal Case, you can call it Upper Camel Case, rather than Under Score Case.
  
+## Notes
+
+![enter image description here](READMERSC/SimulatorScreenShot.png)
+
+Flutter | iOS
+-------------|-------------
+widget | object
+widget build| object load
+StatelessWidget/State build() | object load
+StatefulWidget  createState() | UIViewController loadView
+StatelessWidget vs StatefulWidget  |  ✅`NSObject vs UIViewController` or ❌`NSObject/UIView vs UIControl`
+StatefulWidget vs  State | UIViewController vs UIView
+StatefulWidget.createState and State.initState vs State.setState | ✅`loadView vs (layoutSubviews->viewWillLayoutSubviews)` or ❌ `object.alloc vs UIViewController.viewDidLoad`
+Column | CollectView/TableView/StackView
+Column(children:[]) | TableView.cell
+List | Array
+List.map((element) => Card()).toList() | Array.`enumObject` then `addObject`
+
+this.startingProduct vs widget.startingProduct
+
+
+
+Objective-C 
+
+ ```Objective-C
+button.edgeInsets
+ ```
+
+VS
+
+Flutter
+
+ ```Flutter
+Container(
+          margin: EdgeInsets.all(10.0),
+          child: RaisedButton(...)
+          );
+ ```
+
+          
+
+Objective-C
+
+ ```Objective-C
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    //TODO:  
+}
+ ```
+ 
+  VS
+  
+  Flutter
+  
+ ```Flutter
+class _ProductManagerState extends State<ProductManager> {
+  @override
+    void initState() {
+      //TODO:  
+      super.initState();
+    }
+}
+ ```
+
+
+ 
+
+
+
