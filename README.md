@@ -11,19 +11,22 @@ My hobbies:
  
 ## QA
 
-Q: is
-
-A:
-
 
 Flutter | iOS
 -------------|-------------
+widget | object
+widget build| object load
+StatelessWidget/State build() | object load
+StatefulWidget  createState() | UIViewController loadView
+StatelessWidget vs StatefulWidget  |  ✅`NSObject vs UIViewController` or ❌`NSObject/UIView vs UIControl`
+StatefulWidget vs  State | UIViewController vs UIView
+StatefulWidget.createState and State.initState vs State.setState | ✅`loadView vs (layoutSubviews->viewWillLayoutSubviews)` or ❌ `object.alloc vs UIViewController.viewDidLoad`
 Column | CollectView/TableView/StackView
 Column(children:[]) | TableView.cell
 List | Array
-StatelessWidget vs StatefulWidget  |  NSObject/UIView vs UIControl
 List.map((element) => Card()).toList() | Array.`enumObject` then `addObject`
 
+this.startingProduct vs widget.startingProduct
 
 
 
@@ -35,6 +38,8 @@ button.edgeInsets
 
 VS
 
+Flutter
+
  ```Flutter
 Container(
           margin: EdgeInsets.all(10.0),
@@ -43,4 +48,32 @@ Container(
  ```
 
           
+
+Objective-C
+
+ ```Objective-C
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    //TODO:  
+}
+ ```
+ 
+  VS
+  
+  Flutter
+  
+ ```Flutter
+class _ProductManagerState extends State<ProductManager> {
+  @override
+    void initState() {
+      //TODO:  
+      super.initState();
+    }
+}
+ ```
+
+
+ 
+
+
 
