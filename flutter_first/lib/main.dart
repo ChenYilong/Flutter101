@@ -5,6 +5,7 @@
 //  Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 12/28/18.  
 //  Copyright © 2018 https://github.com/ChenYilong . All rights reserved.
 //
+
 import 'package:flutter/material.dart';
 import './ProductManager.dart';
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('EasyList'),
           ),
-          body: ProductManager()),
+          body: ProductManager('Food Tester')
+          ),
     );
   }
 }
