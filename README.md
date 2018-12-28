@@ -11,7 +11,7 @@ My hobbies:
  
 ## Notes
 
-![enter image description here](READMERSC/SimulatorScreenShot.png)
+![enter image description here](READMERSC/day2SimulatorScreenShot.gif)
 
 Flutter | iOS
 -------------|-------------
