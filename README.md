@@ -9,8 +9,9 @@ My hobbies:
 
  - when I name a class name or class file name, I prefer Pascal Case, you can call it Upper Camel Case, rather than Under Score Case.
  
-## QA
+## Notes
 
+![enter image description here](READMERSC/SimulatorScreenShot.png)
 
 Flutter | iOS
 -------------|-------------
