@@ -1,17 +1,17 @@
+//
+//  main.dart    
+//
+//
+//  Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 12/28/18.  
+//  Copyright © 2018 https://github.com/ChenYilong . All rights reserved.
+//
 import 'package:flutter/material.dart';
+import './ProductManager.dart';
 
 // name = "Max";
 void main(List<String> args) => runApp(MyApp());
-
-class MyApp extends StatefulWidget {
-@override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return _MyAppState();
-  }
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     // context.
     return MaterialApp(
@@ -19,25 +19,7 @@ class _MyAppState extends State<MyApp> {
           appBar: AppBar(
             title: Text('EasyList'),
           ),
-          body: Column(children: <Widget>[
-            Container(
-              margin: EdgeInsets.all(10.0),
-              child: RaisedButton(
-                
-                onPressed: () {},
-                child: Text('Add Product'),
-              ),
-            ),
-            Card(
-              child: Column(
-                children: <Widget>[
-                  Image.asset(
-                      'assets/XcodeElon.jpg'),
-                  Text('Food Paradise')
-                ],
-              ),
-            ),
-          ])),
+          body: ProductManager()),
     );
   }
 }
