@@ -7,5 +7,5 @@ I will commit code continuously, but learning guide such as README cannot be pro
 
 My hobbies:
 
- - when I name a class name or class file name, I perfer Pascal Case, you can call it Upper Camel Case, rather than Under Score Case.
+ - when I name a class name or class file name, I prefer Pascal Case, you can call it Upper Camel Case, rather than Under Score Case.
  
