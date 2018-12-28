@@ -15,13 +15,13 @@ My hobbies:
 
 Flutter | iOS
 -------------|-------------
-widget | object
-widget build| object load
-StatelessWidget/State build() | object load
-StatefulWidget  createState() | UIViewController loadView
-StatelessWidget vs StatefulWidget  |  ✅`NSObject vs UIViewController` or ❌`NSObject/UIView vs UIControl`
-StatefulWidget vs  State | UIViewController vs UIView
-StatefulWidget.createState and State.initState vs State.setState | ✅`loadView vs (layoutSubviews->viewWillLayoutSubviews)` or ❌ `object.alloc vs UIViewController.viewDidLoad`
+widget | object/view
+widget build| object init/loadView
+StatelessWidget build() | object init/loadView
+`State  build()` -> `StatefulWidget  createState()`  |  `(UIControl layoutSubviews)/(UIViewController viewWillLayoutSubviews)`-> `(UIViewController set（UIControl + UIControlEvents)）`
+StatelessWidget vs StatefulWidget  |  ❌`NSObject vs UIViewController` or ✅`NSObject/UIView vs UIControl/UIViewController`
+StatefulWidget vs  State | UIViewController vs (UIControl+ UIControlEvents)
+StatefulWidget.createState and State.initState vs State.setState | ✅`(UIViewController init UIControl 、UIControl set first UIControlEvents render vs UIControl set another UIControlEvents render)` or ❌ `object.alloc vs UIViewController.viewDidLoad`
 Column | CollectView/TableView/StackView
 Column(children:[]) | TableView.cell
 List | Array
