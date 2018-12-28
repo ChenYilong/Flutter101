@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
               child: Column(
                 children: <Widget>[
                   Image.asset(
-                      'assets/XcodeElon.png'),
+                      'assets/Apple-Makes-Xcode-4-1-a-Free-Download-for-OS-X-Lion-Users-2.png'),
                   Text('Food Paradise')
                 ],
               ),

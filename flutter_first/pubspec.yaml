@@ -41,6 +41,7 @@ flutter:
    - assets/XcodeElon.jpg
    - assets/cache.jpg
    - assets/Xcode-Elon.png
+   - assets/Apple-Makes-Xcode-4-1-a-Free-Download-for-OS-X-Lion-Users-2.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
