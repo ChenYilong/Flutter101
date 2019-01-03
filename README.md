@@ -26,6 +26,7 @@ Column | CollectView/TableView/StackView
 Column(children:[]) | TableView.cell
 List | Array
 List.map((element) => Card()).toList() | Array.`enumObject` then `addObject`
+final | `list` default is mutableArray, if it is marked as `final`, means cannot be assigned.(Is it right that every assigning means allocating new space, and final means avoiding allocating?)
 
 this.startingProduct vs widget.startingProduct
 
