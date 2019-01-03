@@ -11,7 +11,7 @@ My hobbies:
  
 ## Notes
 
-![enter image description here](READMERSC/day2SimulatorScreenShot.gif)
+![enter image description here](assets/day4screenshot.gif)
 
 Flutter | iOS
 -------------|-------------
@@ -27,6 +27,10 @@ Column(children:[]) | TableView.cell
 List | Array
 List.map((element) => Card()).toList() | Array.`enumObject` then `addObject`
 final | `list` default is mutableArray, if it is marked as `final`, means cannot be assigned.(Is it right that every assigning means allocating new space, and final means avoiding allocating?)
+ListView vs Container vs Expanded |TableView vs `initWithFrame:style:` vs (`init` + `autolayout`)
+ ListView vs builder | TableView vs `dequeueReusableCellWithIdentifier:`
+ ListView vs itemBuilder |  TableView vs `tableView:cellForRowAtIndexPath:`
+ ListView vs itemCount |   TableView vs `tableView:numberOfRowsInSection:`
 
 this.startingProduct vs widget.startingProduct
 

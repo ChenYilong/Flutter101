@@ -14,22 +14,46 @@ class Products extends StatelessWidget {
   Products([this.products = const []]) {
     print('[Products widget] Constructor]');
   }
+
+  Widget _buildProductItem(BuildContext context, index) {
+    return Card(
+      child: Column(
+        children: <Widget>[
+          Image.asset('assets/CYLLogo-209.jpg'),
+          Text(products[index])
+        ],
+      ),
+    );
+  }
+Widget _buildProductList(){
+ Widget productCard =
+        Center(child: Text('No products found, please add some'));
+    if (products.length > 0) {
+      productCard = ListView.builder(
+        itemBuilder: _buildProductItem,
+        itemCount: products.length,
+      );
+    }
+    return productCard;
+}
   @override
   Widget build(BuildContext context) {
     print('[Products widget] build()]');
-    return Column(
-      children: products
-          .map(
-            (element) => Card(
-                  child: Column(
-                    children: <Widget>[
-                      Image.asset('assets/CYLLogo-209.jpg'),
-                      Text(element)
-                    ],
-                  ),
-                ),
-          )
-          .toList(),
-    );
+    return _buildProductList();
   }
+  //   return ListView(
+  //     children: products
+  //         .map(
+  //           (element) => Card(
+  //                 child: Column(
+  //                   children: <Widget>[
+  //                     Image.asset('assets/CYLLogo-209.jpg'),
+  //                     Text(element)
+  //                   ],
+  //                 ),
+  //               ),
+  //         )
+  //         .toList(),
+  //   );
+  // }
 }

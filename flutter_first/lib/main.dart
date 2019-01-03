@@ -7,16 +7,24 @@
 */
 
 import 'package:flutter/material.dart';
+// import 'package:flutter/rendering.dart';
+
 import './ProductManager.dart';
 
 // name = "Max";
-void main(List<String> args) => runApp(MyApp());
+void main(List<String> args) {
+  // debugPaintSizeEnabled = true;
+  // debugPaintBaselinesEnabled = true;
+  // debugPaintPointersEnabled = true;
+   runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // context.
     return MaterialApp(
+      // debugShowMaterialGrid: true,
       theme: ThemeData(
           brightness: Brightness.light,
           primarySwatch: Colors.deepOrange,
@@ -25,7 +33,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('EasyList'),
         ),
-        body: ProductManager(startingProduct: 'Food Tester'),
+        body: ProductManager(),
       ),
     );
   }
